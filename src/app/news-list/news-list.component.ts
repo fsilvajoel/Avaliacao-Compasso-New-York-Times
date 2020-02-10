@@ -15,19 +15,26 @@ export class NewsListComponent implements OnInit {
   //   {id: 3, nome: 'Carlos'},
 
   // ];
-  news: Array<any>;
+  news = [];
   
   constructor(private newsService : NewsService) { }
 
   ngOnInit(): void {
-    this.showNews();
+    this.showNewsTech();
+    this.showNewsScience();
+    //console.log(this.news);
   }
-  showNews() {
-    this.newsService.getNews().subscribe(dados => this.news = dados);
-      //  = {
-      //     heroesUrl: data['heroesUrl'],
-      //     textfile:  data['textfile']
-      // });
+  showNewsTech() {
+    this.newsService.getNewsTech().subscribe((data: any[])=>{
+      this.news = data['results'];
+      console.log(data['results'].length);
+    });
+  }
+  showNewsScience(){
+    this.newsService.getNewsScience().subscribe((data: any[])=>{
+      this.news = data['results'];
+      console.log(data['results'].length);
+    });
   }
   // showNews(){
   //   this.NewsService.getNews().subscribe((data: news) => this.news ={

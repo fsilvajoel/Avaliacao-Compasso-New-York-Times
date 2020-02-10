@@ -1,7 +1,8 @@
 <h2>Listagem de notícias</h2>
 <ul>
     <li *ngFor="let n of news">
-        {{n.id}} {{n.nome}}
+        {{n.abstract}}
+        <br><br>
     </li>
     <li>Teste</li>
     <li>Teste</li>
@@ -9,3 +10,19 @@
     <li>Teste</li>
 
 </ul>
+
+<div class="row">
+    <div *ngFor="let n of news" class="col s12 m6">
+        <div class="card">
+            <div class="card-image">
+                <img src="../../assets/office.jpg">
+                <span class="card-title">{{n.nome}}</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+                <p>
+                    {{n.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
