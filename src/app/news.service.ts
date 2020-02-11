@@ -6,7 +6,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 })
 
 export class NewsService {
-  //nytimesUrl = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=Zzlh06XfQI0BbsJDpc2XweBi3PbVnvX1';
   API_URL_SCIENCE = "https://api.nytimes.com/svc/news/v3/content/all/science.json?limit=150"
   API_URL_TECH = "https://api.nytimes.com/svc/news/v3/content/all/technology.json?limit=150"
   API_KEY = "Zzlh06XfQI0BbsJDpc2XweBi3PbVnvX1"
