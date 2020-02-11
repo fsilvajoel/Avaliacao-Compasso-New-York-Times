@@ -8,7 +8,12 @@ import { NewsListComponent } from './news-list/news-list.component';
 // import { JwPaginationComponent } from 'jw-angular-pagination';
 import { ListScienceComponent } from './list-science/list-science.component';
 import { ListTechnologyComponent } from './list-technology/list-technology.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,13 @@ import { ListTechnologyComponent } from './list-technology/list-technology.compo
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

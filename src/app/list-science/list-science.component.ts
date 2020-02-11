@@ -18,8 +18,8 @@ export class ListScienceComponent implements OnInit {
 
  
   ngOnInit(): void {
-    this.showNewsTech();
-    // this.showNewsScience();
+    // this.showNewsTech();
+    this.showNewsScience();
     // this.items = Array(150).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
     //console.log(this.news);
   }

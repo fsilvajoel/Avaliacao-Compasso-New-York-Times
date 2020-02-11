@@ -35,4 +35,5 @@ export class ListTechnologyComponent implements OnInit {
   //   // update current page of items
   //   this.pageOfItems = pageOfItems;
   // }  
+  
 }
