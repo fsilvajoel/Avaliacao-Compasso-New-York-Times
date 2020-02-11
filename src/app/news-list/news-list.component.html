@@ -1,28 +1,37 @@
-<h2>Listagem de notícias</h2>
-<ul>
-    <li *ngFor="let n of news">
-        {{n.abstract}}
-        <br><br>
-    </li>
-    <li>Teste</li>
-    <li>Teste</li>
-    <li>Teste</li>
-    <li>Teste</li>
-
-</ul>
-
-<div class="row">
-    <div *ngFor="let n of news" class="col s12 m6">
+<div class="row center">
+    <div class="col m12 s12 center">
+        <h5 class="text-center">Escolha a categoria que deseja ver as notícias</h5>
+    </div>
+    <!-- <div class="row"> -->
+    <div class="col s3 m3 offset-m3">
         <div class="card">
             <div class="card-image">
-                <img src="../../assets/office.jpg">
-                <span class="card-title">{{n.nome}}</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                <img height="400px" src="../../assets/scienceBanner.png">
+                <span class="card-title">Ciência</span>
             </div>
             <div class="card-content">
-                <p>
-                    {{n.description}}</p>
+                <p>Últimas notícias envolvendo Ciência diretamente da redação do New York Times</p>
+            </div>
+            <div class="card-action">
+                <a class="black-text" routerLink="/science">Confira</a>
             </div>
         </div>
     </div>
+    <div class="col s3 m3">
+        <div class="card">
+            <div class="card-image">
+                <img height="400px" src="../../assets/technologieBanner.jpeg">
+                <span class="card-title">Tecnologia</span>
+            </div>
+            <div class="card-content">
+                <p>Últimas notícias envolvendo Tecnologia diretamente da redação do New York Times</p>
+            </div>
+            <a class="black-text" routerLink="/technology">
+                <div class="card-action">
+                    Confira
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
+<router-outlet></router-outlet>

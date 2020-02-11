@@ -1,0 +1,18 @@
+<div class="row center">
+    <div class="col s12 m4 offset-m4">
+        <h3 class="header">Notícias Sobre Tecnologia</h3>
+        <div *ngFor="let tech of newsTech; let i = index" class="card horizontal">
+            <div class="card-image">
+                <img height="200px" src="{{tech.thumbnail_standard}}">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>{{tech.title}}</p>
+                </div>
+                <div class="card-action">
+                    <a class="black-text" href="#{{tech.slug_name}}" onclick="funcao1()" value="Exibir Alert" class="modal-trigger">Veja mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

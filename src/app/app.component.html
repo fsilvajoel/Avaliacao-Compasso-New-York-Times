@@ -1,15 +1,16 @@
 <nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo right">Logo</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+    <div class="nav-wrapper black-text white">
+        <a href="#" class="brand-logo right"><img height="60px" src="../assets/logoLarge.png"></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down black-text">
+            <li><a class="black-text" routerLink="/">Início</a></li>
+            <li><a class="black-text" routerLink="/science">Ciência</a></li>
+            <li><a class="black-text" routerLink="/technology">Tecnologia</a></li>
         </ul>
     </div>
 </nav>
-<h1>
-    New York Times
-</h1>
+
+<h1 class="center">Compasso Times </h1>
 <app-news-list></app-news-list>
+
+<router-outlet></router-outlet>
 <!-- <router-outlet></router-outlet> -->

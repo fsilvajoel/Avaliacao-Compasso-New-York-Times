@@ -1,0 +1,33 @@
+<!-- {{tech.title}}
+{{sce.url}}
+{{sce.abstract}}
+{{sce.slug_name}}
+{{sce.thumbnail_standard}}
+{{sce.published_date}} 
+
+{{tech.title}}
+{{tech.url}}
+{{tech.abstract}}
+{{tech.slug_name}}
+{{tech.thumbnail_standard}}
+{{tech.published_date}} 
+-->
+
+<div class="row center">
+    <div class="col s12 m4 offset-m4">
+        <h3 class="header">Notícias Sobre Ciência</h3>
+        <div *ngFor="let sce of newsScience" class="card horizontal">
+            <div class="card-image">
+                <img height="200px" src="{{sce.thumbnail_standard}}">
+            </div>
+            <div class="card-stacked ">
+                <div class="card-content ">
+                    <p>{{sce.title}}</p>
+                </div>
+                <div class="card-action ">
+                    <a class="black-text" href="# ">Ver detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
